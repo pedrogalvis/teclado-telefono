@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+<head>    
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="reset.css">
+   
+</head>
+
+<body>
+  <h1> Teléfono </h1>
+  <input type="tel" placeholder="Ingresa tu teléfono">
+   <section class="teclado">
+     <input type="button" value="1">
+      <input type="button" value="2">
+      <input type="button" value="3">
+      <input type="button" value="4">
+      <input type="button" value="5">
+      <input type="button" value="6">
+      <input type="button" value="7">
+      <input type="button" value="8">
+      <input type="button" value="9">
+      <input type="button" value="*">
+      <input type="button" value="0">
+      <input type="button" value="#">
+    </section>
+    
+<script src="main.js"></script>
+
+</body>
+
+
+<!--
+/*----------------------------------------------------------------
+<div class="row">
+    <div class="col s12 l4">
+      <div class="card-panel">
+        <h5 class="center">Seleccionar Lote</h5>
+        <div class="row">
+          <section class="input-filts col s12">
+             <input type="Number" name="NumberLote" value="" placeholder="Numero del Lote" class="center" style="font-size: 2.9rem;">
+             <label for="NumberLote"></label>
+          </section>
+          <section class="row ">
+       
+            <div class="col s4 light-blue numbersDashboard center " onclick="setNumbersSelectDashboard(1)"><p>1</p></div>
+            <div class="col s4 light-blue numbersDashboard center " onclick="setNumbersSelectDashboard(2)"><p>2</p></div>
+            <div class="col s4 light-blue numbersDashboard center " onclick="setNumbersSelectDashboard(3)"><p>3</p></div>
+            <div class="col s4 light-blue numbersDashboard center " onclick="setNumbersSelectDashboard(4)"><p>4</p></div>
+            <div class="col s4 light-blue numbersDashboard center " onclick="setNumbersSelectDashboard(5)"><p>5</p></div>
+            <div class="col s4 light-blue numbersDashboard center " onclick="setNumbersSelectDashboard(6)"><p>6</p></div>
+            <div class="col s4 light-blue numbersDashboard center " onclick="setNumbersSelectDashboard(7)"><p>7</p></div>
+            <div class="col s4 light-blue numbersDashboard center " onclick="setNumbersSelectDashboard(8)"><p>8</p></div>
+            <div class="col s4 light-blue numbersDashboard center " onclick="setNumbersSelectDashboard(9)"><p>9</p></div>
+            <div class="col s4 light-blue numbersDashboard center " onclick="setNumbersSelectDashboard('none')"><p></p></div>
+            <div class="col s4 light-blue numbersDashboard center " onclick="setNumbersSelectDashboard(0)"><p>0</p></div>
+            <div class="col s4 light-blue numbersDashboard center " onclick="setNumbersSelectDashboard('Clear')"><p>Clear</p></div>
+          </section>
+        </div>
+      </div>
+    </div>
+      
+      
+      <div class="col s12 l4">
+      <div class="card-panel">
+        <h5 class="center">Colores</h5>
+    
+        <section class="row" id="tbodyListColorsDashBoard">
+    
+        <div id="cdb-582ce56b397dc5402915b53f" class="col s4 colorDashboar valign-wrapper" style="background-color: #FFFFFF;" onclick="setColorSelectDashboard('582ce56b397dc5402915b53f')">
+          <input type="radio" id="dbProd-582ce56b397dc5402915b53f" name="selectProductDB" >
+          <label for="dbProd-582ce56b397dc5402915b53f"></label>
+        </div><div id="cdb-582ce573397dc5402915b540" class="col s4 colorDashboar valign-wrapper" style="background-color: #000000;" onclick="setColorSelectDashboard('582ce573397dc5402915b540')">
+          <input type="radio" id="dbProd-582ce573397dc5402915b540" name="selectProductDB">
+          <label for="dbProd-582ce573397dc5402915b540"></label>
+        </div><div id="cdb-582ce57b397dc5402915b541" class="col s4 colorDashboar valign-wrapper" style="background-color: #C0C0C0;" onclick="setColorSelectDashboard('582ce57b397dc5402915b541')">
+          <input type="radio" id="dbProd-582ce57b397dc5402915b541" name="selectProductDB">
+          <label for="dbProd-582ce57b397dc5402915b541"></label>
+        </div><div id="cdb-582ce58d397dc5402915b543" class="col s4 colorDashboar valign-wrapper" style="background-color: #FFFF00;" onclick="setColorSelectDashboard('582ce58d397dc5402915b543')">
+          <input type="radio" id="dbProd-582ce58d397dc5402915b543" name="selectProductDB">
+          <label for="dbProd-582ce58d397dc5402915b543"></label>
+        </div><div id="cdb-582ce595397dc5402915b544" class="col s4 colorDashboar valign-wrapper" style="background-color: #008000;" onclick="setColorSelectDashboard('582ce595397dc5402915b544')">
+          <input type="radio" id="dbProd-582ce595397dc5402915b544" name="selectProductDB">
+          <label for="dbProd-582ce595397dc5402915b544"></label>
+        </div><div id="cdb-582ce5a6397dc5402915b546" class="col s4 colorDashboar valign-wrapper" style="background-color: #00FFFF;" onclick="setColorSelectDashboard('582ce5a6397dc5402915b546')">
+          <input type="radio" id="dbProd-582ce5a6397dc5402915b546" name="selectProductDB">
+          <label for="dbProd-582ce5a6397dc5402915b546"></label>
+        </div><div id="cdb-582ce5ae397dc5402915b547" class="col s4 colorDashboar valign-wrapper" style="background-color: #0000FF;" onclick="setColorSelectDashboard('582ce5ae397dc5402915b547')">
+          <input type="radio" id="dbProd-582ce5ae397dc5402915b547" name="selectProductDB">
+          <label for="dbProd-582ce5ae397dc5402915b547"></label>
+        </div><div id="cdb-582ce5b6397dc5402915b548" class="col s4 colorDashboar valign-wrapper" style="background-color: #800080;" onclick="setColorSelectDashboard('582ce5b6397dc5402915b548')">
+          <input type="radio" id="dbProd-582ce5b6397dc5402915b548" name="selectProductDB">
+          <label for="dbProd-582ce5b6397dc5402915b548"></label>
+        </div><div id="cdb-582ce5bf397dc5402915b549" class="col s4 colorDashboar valign-wrapper" style="background-color: #FF0000;" onclick="setColorSelectDashboard('582ce5bf397dc5402915b549')">
+          <input type="radio" id="dbProd-582ce5bf397dc5402915b549" name="selectProductDB">
+          <label for="dbProd-582ce5bf397dc5402915b549"></label>
+        </div></section>
+    
+        <div id="dashboarProgressColor">
+          <div class="progress light-blue">
+              <div class="indeterminate blue"></div>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+    </div>
+
+
+
+

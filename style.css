@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+/*   margin: 0;
+  padding: 0; */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background-color:cornsilk;
+  min-height: 100vh;
+}
+
+input {
+  border: none;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 38px;
+  color: orangered;
+}
+
+.teclado {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px; 
+
+  background-color: darkgray;
+  border-radius: 20px;
+
+  padding: 15px;
+}
+
+input[type=button] {
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  height: 80px;
+  width: 80px;
+}
+
+input[type=tel] {
+  background-color: bisque;
+  border-radius: 10px;
+  font-family: monospace;
+  font-size: 22px;
+  height: 40px;
+  margin-bottom: 24px;
+  padding: 10px;
+  text-align: center;
+  width: 280px;
+}
+
+.activa {
+  background-color: yellow;
+}
+
+
+
+/*css
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color:cornsilk;
+  min-height: 100vh;
+}
+
+input {
+  border:none;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  color:darkorange;
+}
+
+.teclado {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px; 
+  background-color:darkgray;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+input[type=button] {
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  height: 80px;
+  width: 80px;
+}
+
+input[type=tel] {
+  background-color:bisque;
+  border-radius: 10px;
+  font-family: monospace;
+  font-size: 22px;
+  height: 40px;
+  margin-bottom: 24px;
+  padding: 10px;
+  text-align: center;
+  width: 280px;
+}
+
+
+
+
+
+/*
+.colorDashboar{
+  height 115px;
+  border 2px solid #DDD;
+  border-radius 10px;
+  cursor pointer;
+}
+.numbersDashboard{
+  background-color: #FFF;
+  height 115px;
+  border 2px solid #DDD;
+  border-radius 8px;
+  font-size 2em;
+  cursor pointer;
+}
+
