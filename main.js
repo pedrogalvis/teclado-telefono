@@ -1,22 +1,14 @@
-// Obtén todos los botones del teclado
-const botones = document.querySelectorAll('.teclado input[type="button"]');
-const campoTelefono = document.querySelector('input[type="tel"]');
+const listaDeTeclas = document.querySelectorAll('input[type=button]');
+const inputTel = document.querySelector('input[type=tel]');
 
-// Agrega un evento de clic a cada botón
-botones.forEach((boton) => {
-  boton.addEventListener('click', () => {
-    const valorBoton = boton.value;
-
-    // Si el botón es "Clear", borra el contenido del campo
-    if (valorBoton === 'Clear') {
-      campoTelefono.value = '';
-    } else {
-      // Agrega el valor del botón al campo
-      campoTelefono.value += valorBoton;
-    }
-  });
-});
-
+for (let indice = 0; indice < listaDeTeclas.length; indice++) {
+  
+  const tecla = listaDeTeclas[indice];
+  
+  tecla.onclick = function () {
+    inputTel.value = inputTel.value + tecla.value;
+  }
+}
 
 
 
