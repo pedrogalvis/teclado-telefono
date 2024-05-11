@@ -10,24 +10,19 @@ for (let indice = 0; indice < listaDeTeclas.length; indice++) {
   }
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+const botones = document.querySelectorAll('button');
+console.log(botones);
+});
 
-
-
-//document.addEventListener('DOMContentLoaded', function() {
- // const botones = document.querySelectorAll('button');
- // console.log(botones);
-//});
-
-
-
-//document.addEventListener('DOMContentLoaded', function() {
-//  const teclas = document.querySelectorAll('.teclado input[type="button"]');
-//  teclas.forEach(tecla => {
-//    tecla.addEventListener('click', function() {
-//      console.log(tecla.value);
-//    });
-//  });
-//});
+document.addEventListener('DOMContentLoaded', function() {
+  const teclas = document.querySelectorAll('.teclado input[type="button"]');
+  teclas.forEach(tecla => {
+    tecla.addEventListener('click', function() {
+      console.log(tecla.value);
+ });
+  });
+});
 
 
 //En este código, utilizamos document.querySelectorAll('.teclado input[type="button"]') para seleccionar todos los botones dentro del elemento con la clase "teclado". Luego, utilizamos forEach para recorrer cada tecla y asignar un evento de clic a cada una. Cuando se hace clic en una tecla, se muestra su valor en la consola con console.log(tecla.value).
@@ -50,16 +45,6 @@ for (let indice = 0; indice < listaDeTeclas.length; indice++) {
 //    });
 //  }
 // });
-
-
-
-
-
-
-
-
-
-
 
 
 
